@@ -1,0 +1,24 @@
+{
+  "name": "pantry",
+  "version": "1.0.0",
+  "description": "Pantry App backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calvinjohnson747/Pantryapp.git"
+  },
+  "author": "Calvin J Joseph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/calvinjohnson747/Pantryapp/issues"
+  },
+  "homepage": "https://github.com/calvinjohnson747/Pantryapp#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.3.0",
+    "mysql": "^2.18.1"
+  }
+}
