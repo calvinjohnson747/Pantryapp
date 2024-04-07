@@ -1,10 +1,8 @@
 const express = require('express');
-const {mysqlConnection, mongoose} = require('./index');
-const myController = require('./controller');
-
+const myController = require('./controller.js');
 const router = express.Router();
 
-router.get('/api/:username',myController.getGroupName);
+router.get('/api/:username',myController.GroupName);
 
 
 module.exports = router;

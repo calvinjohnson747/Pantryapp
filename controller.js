@@ -16,9 +16,9 @@ mysqlConnection.connect((err) => {
     console.log('Connected to MySQL database');
 });
 
-class MyController {
-    static getGroupName(req, res) {
-        try {
+
+const GroupName = (req, res) => {
+    try {
             const query = `
             select h.groupname from house h 
             inner join association a on h.groupid = a.groupid
@@ -41,11 +41,11 @@ class MyController {
                 const groupName = results[0].groupname;
                 res.status(200).json({ groupName });
             });
-        } catch (error) {
+    } catch (error) {
             console.error('Error in GET /api/:username:', error);
             res.status(500).send('Internal Server Error');
         }   
-     }
 }
 
-module.exports = MyController;
+
+module.exports = {GroupName};
