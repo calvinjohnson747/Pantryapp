@@ -1,0 +1,6 @@
+Groups page = get request (select H.group_name from houses H, Users U where U.Userid = H.groupid and U.Username = {username})
+              pass group name to pantry screen
+Pantry page = get request (select group_id from house where group_name = {group_name})
+              get request (select items from house_item where group_id = {group_id})
+              post request (insert house_item values (quantity = {quantity}))
+              
